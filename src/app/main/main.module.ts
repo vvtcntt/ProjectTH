@@ -1,12 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MainComponent } from './main.component';
-import { FuntionComponent } from './funtion/funtion.component';
-
-@NgModule({
+import { FunctionComponent } from './function/function.component';
+import {mainRoutes} from './main.routes';
+import{RouterModule,Routes} from '@angular/router';
+import { UserComponent } from './user/user.component';
+import {UserModule} from './user/user.module';
+ @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+     RouterModule.forChild(mainRoutes)
   ],
-  declarations: [MainComponent, FuntionComponent]
+  declarations: [MainComponent, FunctionComponent]
 })
 export class MainModule { }
