@@ -6,9 +6,11 @@ import {mainRoutes} from './main.routes';
 import{RouterModule,Routes} from '@angular/router';
 import { UserComponent } from './user/user.component';
 import {UserModule} from './user/user.module';
+import {HomeModule} from './home/home.module';
+
  @NgModule({
   imports: [
-    CommonModule,
+    CommonModule, 
      RouterModule.forChild(mainRoutes)
   ],
   declarations: [MainComponent, FunctionComponent]
